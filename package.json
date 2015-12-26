@@ -1,7 +1,7 @@
 {
-  "name": "xd",
+  "name": "void-web",
   "version": "1.0.0",
-  "description": "basic react framework",
+  "description": "scaffolding for website development",
   "main": "./src/index.jsx",
   "keywords": [
     "react",
@@ -9,6 +9,15 @@
   ],
   "author": "xujun",
   "license": "ISC",
+  "scripts": {
+    "build": "rm -rf dist && webpack",
+    "dev": "node server.js",
+    "lint": "eslint --ext .js,.jsx src",
+    "start": "node server.js"
+  },
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
     "antd": "^0.10.4",
     "history": "^1.13.1",
@@ -38,12 +47,12 @@
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
-  "pre-commit": [
-    "lint"
-  ],
-  "scripts": {
-    "build": "rm -rf dist && webpack",
-    "dev": "node server.js",
-    "lint": "eslint --ext .js,.jsx src"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xujun60/void-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xujun60/void-web/issues"
+  },
+  "homepage": "https://github.com/xujun60/void-web#readme"
 }

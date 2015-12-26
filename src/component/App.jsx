@@ -1,5 +1,5 @@
 import React from 'react';
-import { Datepicker, Checkbox, Button } from 'antd';
+import { Datepicker } from 'antd';
 import { Link } from 'react-router';
 
 class App extends React.Component {

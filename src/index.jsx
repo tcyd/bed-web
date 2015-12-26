@@ -5,8 +5,6 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import { Router, Route } from 'react-router';
 
-
-
 ReactDOM.render((
   <Router>
     <Route path="/" component={App}>
